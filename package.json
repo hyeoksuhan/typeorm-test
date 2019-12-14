@@ -1,0 +1,25 @@
+{
+   "name": "typeormtest",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "ts-node src/index.ts",
+      "dev": "tsnd src/index.ts",
+      "migration:gen": "ts-node ./node_modules/typeorm/cli.js migration:generate "
+   },
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "mysql": "^2.14.1",
+      "reflect-metadata": "^0.1.10",
+      "ts-node-dev": "^1.0.0-pre.44",
+      "typeorm": "0.2.21"
+   },
+   "devDependencies": {
+      "ts-node": "3.3.0",
+      "@types/node": "^8.0.29",
+      "typescript": "3.3.3333"
+   }
+}
