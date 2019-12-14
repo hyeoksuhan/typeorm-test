@@ -10,7 +10,7 @@ export class User {
     fullName: string;
 
     @Column()
-    age: number;
+    myAge: number;
 
     @Column()
     dob: string;

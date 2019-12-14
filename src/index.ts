@@ -4,9 +4,9 @@ import { User } from "./entity/User";
 
 createConnection().then(async connection => {
   const user = new User();
-  user.age = 10;
-  user.fullName = "hyeoksu han";
-  user.dob = "20091020";
+  user.myAge = 10;
+  user.fullName = "hyeoksu han2";
+  user.dob = "20091030";
 
   const userRepository = await getRepository(User);
 
