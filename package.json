@@ -7,7 +7,8 @@
       "test": "echo \"Error: no test specified\" && exit 1",
       "start": "ts-node src/index.ts",
       "dev": "tsnd src/index.ts",
-      "migration:gen": "ts-node ./node_modules/typeorm/cli.js migration:generate"
+      "migration:gen": "ts-node ./node_modules/typeorm/cli.js migration:generate",
+      "migration": "ts-node ./node_modules/typeorm/cli.js migration:run"
    },
    "author": "",
    "license": "ISC",
