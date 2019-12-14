@@ -11,7 +11,4 @@ export class User {
 
     @Column()
     myAge: number;
-
-    @Column()
-    dob: string;
 }

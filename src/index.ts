@@ -6,7 +6,6 @@ createConnection().then(async connection => {
   const user = new User();
   user.myAge = 10;
   user.fullName = "hyeoksu han2";
-  user.dob = "20091030";
 
   const userRepository = await getRepository(User);
 
