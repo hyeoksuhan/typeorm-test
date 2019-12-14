@@ -5,12 +5,13 @@
    "main": "index.js",
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "ts-node src/index.ts",
-      "dev": "tsnd src/index.ts",
+      "build": "rm -rf build && tsc && cp ormconfig.js ./build",
+      "start": "npm run build && cp package* build && npm i --prefix build && NODE_ENV=production node ./build/index.js",
+      "dev": "tsnd --respawn --transpileOnly src/index.ts",
       "migration:gen": "ts-node ./node_modules/typeorm/cli.js migration:generate",
       "migration": "ts-node ./node_modules/typeorm/cli.js migration:run"
    },
-   "author": "",
+   "author": "hshan",
    "license": "ISC",
    "dependencies": {
       "mysql": "^2.14.1",
