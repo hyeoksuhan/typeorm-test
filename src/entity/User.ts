@@ -12,4 +12,6 @@ export class User {
     @Column()
     age: number;
 
+    @Column()
+    dob: string;
 }
